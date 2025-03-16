@@ -1,5 +1,3 @@
-import { oneToFiveRange } from "./types";
-
 export interface StarsProps {
-    count: oneToFiveRange;
+    count: 1 | 2 | 3 | 4 | 5;
   }
