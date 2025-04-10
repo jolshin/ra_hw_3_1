@@ -2,18 +2,12 @@ import Star from "./Star";
 import { StarsProps } from "../models/interfaces";
 
 const Stars = ({ count }: StarsProps) => {
-  if (count > 0 && count < 6) {
-    return (
-      <div className="container">
-        <h2>Film's name goes here</h2>
-        <ul className="card-body-stars u-clearfix">
-          {new Array(count).fill("").map((_, __) => (
-            <Star />
-          ))}
-        </ul>
-      </div>
-    );
-  }
+  return (
+    <div className="container">
+      <h2>Film's name goes here</h2>
+      <Star count={count} />
+    </div>
+  );
 };
 
 export default Stars;
